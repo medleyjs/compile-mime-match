@@ -1,6 +1,6 @@
 {
   "name": "compile-mime-match",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Compiles a function that matches a given MIME type.",
   "main": "compile-mime-match.js",
   "files": [
