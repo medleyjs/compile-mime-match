@@ -1,9 +1,10 @@
 # compile-mime-match
 
+[![npm Version](https://img.shields.io/npm/v/compile-mime-match.svg)](https://www.npmjs.com/package/compile-mime-match)
 [![Build Status](https://travis-ci.org/medleyjs/compile-mime-match.svg?branch=master)](https://travis-ci.org/medleyjs/compile-mime-match)
 [![Coverage Status](https://coveralls.io/repos/github/medleyjs/compile-mime-match/badge.svg?branch=master)](https://coveralls.io/github/medleyjs/compile-mime-match?branch=master)
 
-Compiles a function that matches a given MIME type. A faster alternative to [`type-is`](https://www.npmjs.com/package/type-is) for when the MIME type is known ahead of time.
+Compiles a function that matches a given MIME type pattern. A faster alternative to [`type-is`](https://www.npmjs.com/package/type-is) for when the MIME type is known ahead of time and only a `true` or `false` result is needed.
 
 ## Installation
 
