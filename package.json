@@ -1,0 +1,44 @@
+{
+  "name": "compile-mime-match",
+  "version": "0.0.0",
+  "description": "Compiles a function that matches a given MIME type.",
+  "main": "compile-mime-match.js",
+  "files": [
+    "compile-mime-match.js"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "license": "MIT",
+  "author": "Nathan Woltman <nwoltman@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medleyjs/compile-mime-match.git"
+  },
+  "homepage": "https://github.com/medleyjs/compile-mime-match#readme",
+  "bugs": {
+    "url": "https://github.com/medleyjs/compile-mime-match/issues"
+  },
+  "keywords": [
+    "compile",
+    "mime",
+    "content",
+    "type",
+    "match",
+    "medley",
+    "fast"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "eslint": "^4.19.1",
+    "mocha": "^5.0.4",
+    "nyc": "^11.6.0"
+  },
+  "scripts": {
+    "lint": "eslint *.js test/*.js",
+    "test-only": "nyc --reporter=html --reporter=text-summary mocha",
+    "test": "npm run lint && npm run test-only",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  }
+}
