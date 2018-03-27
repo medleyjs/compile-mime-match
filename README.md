@@ -8,11 +8,11 @@ Compiles a function that matches a given MIME type pattern. A faster alternative
 
 ## Installation
 
-```
-// npm
+```sh
+# npm
 npm install compile-mime-match --save
 
-// yarn
+# yarn
 yarn add compile-mime-match
 ```
 
