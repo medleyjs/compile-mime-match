@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '6'
   - '8'
-  - '9'
+  - '10'
 after_success: npm run coveralls
 deploy:
   provider: npm
@@ -10,4 +10,4 @@ deploy:
   on:
     tags: true
   api_key:
-    secure: PyYNKv3RUb1DKld/Ieq8qCrfLgt2hS2NcmLnKdowIemmaMmrmwgb0tDjlLq9jEkAPThyhhqMKJehINQlB/BA/fE0ZPbSJqexCNcyPyvLTifH+hrYdNfTqChMeuag52UBSPALOA3WGCY8o4ExzJZFpvr0Kc1iNvtsOe/wja3FSvfvMCL+geFpEsxZeFtORtH9rlx/bptj3tBzsYBrLGv2vIBlG5yBo5Cg+4asjA7tBBPp3TuFDXaHOjK/NzFzR7+6cf8IR+Jiu3F+mn6+KAma70YZcW5976EuuIo0jNdMZuWX7WZXDBHShMlaOm1BEEg84SVQiYwq/jq+9Dx2ets/a822hWLCnmok8226dFfGScfAOJKrdIgGStqS3ATrtxpN3h127Quop0Gk7RkODTS9csRTimZzIu6De2OaGwg/NTOxgk1ymt7RS/ckGDAzKPEqCBvMbc57gFaNHsa4jbN/IhdcRoVtnXb1IM3dcxAuAjBbBNa/MIUzJtOo/2gVHaD+I0C0nI6ATXpoorbmgutwpzWpVgNpKOWKQiwttX2DpSSNn6vByhZgZpedfPIVhmXwMvyycJckY6EXM6UPOoN91I+AjMci7/azlvW4nlVpzAD9C7dOesMAAIPWNNo2yn1GCuKBawGks0/saL8jlmJzN5L+19uQm02fj8Bq1K2dBA8=
+    secure: pjEt0+e3c04nMiwSH1P1/kkKp/NShhwFFVN8EzX/hBoJhFwqxlioSZbWGizJPlU05UcF/ipRLIaxqe6rDhBXz0MzECb7ZWy71LpijbtxwGebDk/HeX5cN+8uWk16eUFAXXsjk9cEKI6eel3OWiQ/y233PufJa2u4InuEGWBc+qr5lP4BgbYfZCdhi43uhW6NnQSz96yPtTAZ1lQXb+mT6RTl4bBRLn9qoXyXtNwgenHvZtf2KcQfFFILP5BORDjUnBSrJ4Mu6p2H7oDWJxW4NCTJi7JGysSTCQTUORV1prGvvwdSBezeXYYRcCEQZIj3xAmT+PhqNiWsSuxBaiwUoLRL+2opaofziY8l+H9sabeLs+u0L8cVN6QKHr+Ivout0+9hgG2VpNnUYPPjw8lfsCEeBdaQzq/PMdr1MyQ8Q5XE8j5DVVTMxjbVBrUVraGSRHy8gWTDPapsz/Xv5fveE/A9zl0pxORmXb4Nhfpfcb2slFb8qBI3E5t5xTCWjG5lG+Bd4OU+v91MXWndZvzncZkPrjtQmtSUA7uIX2F32V3AreKvXWkXj0z8ob1D4LILc0SwmQD3jsXnw/hQcNyUX2NSPOWoA8lP7bXUh2IrduDIp+qVcxrsYj1eW8W5BmdKUkmQZCDJHWBnGUT0I1ZrbycnOkw7Lw3SyyoUpr2SlRk=
