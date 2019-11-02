@@ -44,4 +44,5 @@ jspm_packages
 profile*
 
 # Lock files
+package-lock.json
 yarn.lock
