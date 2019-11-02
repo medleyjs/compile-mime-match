@@ -2,6 +2,8 @@
   "name": "compile-mime-match",
   "version": "0.1.0",
   "description": "Compiles a function that matches a given MIME type.",
+  "license": "MIT",
+  "author": "Nathan Woltman <nwoltman@outlook.com>",
   "main": "compile-mime-match.js",
   "files": [
     "compile-mime-match.js"
@@ -9,16 +11,9 @@
   "engines": {
     "node": ">=6"
   },
-  "license": "MIT",
-  "author": "Nathan Woltman <nwoltman@outlook.com>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/medleyjs/compile-mime-match.git"
-  },
+  "repository": "github:medleyjs/compile-mime-match",
   "homepage": "https://github.com/medleyjs/compile-mime-match#readme",
-  "bugs": {
-    "url": "https://github.com/medleyjs/compile-mime-match/issues"
-  },
+  "bugs": "https://github.com/medleyjs/compile-mime-match/issues",
   "keywords": [
     "compile",
     "mime",
@@ -28,17 +23,27 @@
     "medley",
     "fast"
   ],
-  "dependencies": {},
+  "nyc": {
+    "reporter": [
+      "html",
+      "text-summary"
+    ],
+    "check-coverage": true,
+    "branches": 100,
+    "lines": 100,
+    "statements": 100
+  },
   "devDependencies": {
-    "coveralls": "^3.0.4",
-    "eslint": "^5.16.0",
-    "mocha": "^6.1.4",
+    "@nwoltman/eslint-config": "^0.5.1",
+    "coveralls": "^3.0.7",
+    "eslint": "^6.6.0",
+    "mocha": "^6.2.2",
     "nyc": "^14.1.1"
   },
   "scripts": {
     "lint": "eslint *.js test/*.js",
-    "test-only": "nyc --reporter=html --reporter=text-summary mocha",
-    "test": "npm run lint && npm run test-only",
+    "test-only": "nyc mocha",
+    "test": "eslint *.js test/*.js && nyc mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   }
 }
