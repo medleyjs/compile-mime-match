@@ -10,7 +10,7 @@ Compiles a function that matches a given MIME type pattern. A faster alternative
 
 ```sh
 # npm
-npm install compile-mime-match --save
+npm install compile-mime-match
 
 # yarn
 yarn add compile-mime-match
@@ -93,7 +93,7 @@ mimeMatch('invalid+json'); // false
 ```
 
 #### Array
-  
+
 `compile-mime-match` also accepts an array of strings to match multiple types at the same time:
 
 ```js
